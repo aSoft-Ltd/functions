@@ -35,6 +35,6 @@ kotlin {
 }
 
 aSoftOSSLibrary(
-    version = asoft.versions.foundation.get(),
+    version = asoft.versions.root.get(),
     description = "An multiplatform representation of a Promised based api"
 )
