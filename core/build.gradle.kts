@@ -25,14 +25,10 @@ kotlin {
             dependsOn(nonJvmMain)
         }
 
-        val nativeMain by creating {
-            dependsOn(nonJvmMain)
-        }
-
         (nativeTargets).forEach {
             val main by it.compilations.getting {}
             main.defaultSourceSet {
-                dependsOn(nativeMain)
+                dependsOn(nonJvmMain)
             }
         }
     }
