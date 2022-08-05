@@ -32,7 +32,7 @@ fun includeSubs(base: String, path: String = base, vararg subs: String) {
 
 val tmp = 1
 
-rootProject.name = "functions"
+rootProject.name = "root"
 
 // submodules
 includeSubs("functions", ".", "core")
