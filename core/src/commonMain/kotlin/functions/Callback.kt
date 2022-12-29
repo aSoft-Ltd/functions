@@ -1,5 +1,5 @@
 package functions
 
 fun interface Callback<in T> {
-    fun invoke(value: T)
+    operator fun invoke(value: T)
 }
