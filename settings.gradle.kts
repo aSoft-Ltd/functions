@@ -34,5 +34,6 @@ val tmp = 1
 
 rootProject.name = "asoft"
 
+includeBuild("../able")
 // submodules
 includeSubs("functions", ".", "core")
