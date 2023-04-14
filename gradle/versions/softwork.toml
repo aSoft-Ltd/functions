@@ -1,0 +1,5 @@
+[versions]
+routing-compose = "0.2.11"
+
+[libraries]
+routing-compose = { module = "app.softwork:routing-compose", version.ref = "routing-compose" }

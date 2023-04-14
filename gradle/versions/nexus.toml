@@ -1,5 +1,10 @@
 [versions]
+staging = "0.22.0"
 publish = "1.1.0"
+
+[libraries]
+gradle-plugin-staging = { module = "io.codearte.gradle.nexus:gradle-nexus-staging-plugin", version.ref = "staging" }
+gradle-plugin-publish = { module = "io.github.gradle-nexus:publish-plugin", version.ref = "publish" }
 
 [plugins]
 publish = { id = "io.github.gradle-nexus.publish-plugin", version.ref = "publish" }
