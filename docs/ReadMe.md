@@ -8,7 +8,7 @@ Functional interfaces for java interoperability
 
 ```kotlin
 dependencies {
-    implementation("tz.co.asoft:functions-core:2.0.13")
+    implementation("tz.co.asoft:functions-core:[version]")
 }
 ```
 
