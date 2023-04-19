@@ -30,7 +30,7 @@ fun includeSubs(base: String, path: String = base, vararg subs: String) {
     }
 }
 
-rootProject.name = "Functions"
+rootProject.name = "functions"
 
 includeBuild("../able")
 // submodules
