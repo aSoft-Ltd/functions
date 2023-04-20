@@ -7,7 +7,6 @@
     alias(petuska.plugins.root.npm.publish) apply false
     alias(kotlinz.plugins.dokka)
     alias(nexus.plugins.publish)
-    alias(asoft.plugins.deploy)
 }
 
 repositories {
@@ -27,3 +26,5 @@ tasks.dokkaHtmlMultiModule {
 
 group = "tz.co.asoft"
 version = asoft.versions.root.get()
+
+deployToSonatype()
