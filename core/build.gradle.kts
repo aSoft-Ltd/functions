@@ -20,11 +20,11 @@ kotlin {
     }
 
     val osxTargets = if (Targeting.OSX) osxTargets() else listOf()
-    val ndkTargets = if (Targeting.NDK) ndkTargets() else listOf()
+//    val ndkTargets = if (Targeting.NDK) ndkTargets() else listOf()
     val linuxTargets = if (Targeting.LINUX) linuxTargets() else listOf()
     val mingwTargets = if (Targeting.MINGW) mingwTargets() else listOf()
 
-    val nativeTargets = osxTargets + ndkTargets + linuxTargets + mingwTargets
+    val nativeTargets = osxTargets + /* ndkTargets + */ linuxTargets + mingwTargets
 
     sourceSets {
         val commonMain by getting
