@@ -31,7 +31,7 @@ subprojects {
     val p = this
 
     configure<MavenPublishBaseExtension> {
-        publishToMavenCentral(SonatypeHost.DEFAULT)
+        publishToMavenCentral(SonatypeHost.DEFAULT,automaticRelease = true)
 
         signAllPublications()
 
