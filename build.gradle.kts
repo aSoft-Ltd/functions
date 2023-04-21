@@ -4,7 +4,6 @@
     alias(kotlinz.plugins.serialization) apply false
     alias(kotlinz.plugins.compose) apply false
     alias(asoft.plugins.library) apply false
-    alias(petuska.plugins.root.npm.publish) apply false
     alias(kotlinz.plugins.dokka)
     alias(nexus.plugins.publish)
     alias(asoft.plugins.deploy)
@@ -25,5 +24,11 @@ tasks.dokkaHtmlMultiModule {
     includes.from("ReadMe.md")
 }
 
+//allprojects {
+//    afterEvaluate {
+//        group = "tz.co.asoft"
+//        version = asoft.versions.root.get()
+//    }
+//}
 group = "tz.co.asoft"
 version = asoft.versions.root.get()
