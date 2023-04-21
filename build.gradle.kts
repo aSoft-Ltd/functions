@@ -24,11 +24,11 @@ tasks.dokkaHtmlMultiModule {
     includes.from("ReadMe.md")
 }
 
-//allprojects {
-//    afterEvaluate {
-//        group = "tz.co.asoft"
-//        version = asoft.versions.root.get()
-//    }
-//}
-group = "tz.co.asoft"
-version = asoft.versions.root.get()
+allprojects {
+    afterEvaluate {
+        group = "tz.co.asoft"
+        version = asoft.versions.root.get()
+    }
+}
+//group = "tz.co.asoft"
+//version = asoft.versions.root.get()
